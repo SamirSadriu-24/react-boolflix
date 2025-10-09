@@ -1,7 +1,8 @@
 
 import './App.css'
 import { RicercaProvider } from './componenti/Context';
-import MyHeader from './componenti/MyHeader'
+import MyHeader from './componenti/Header/MyHeader'
+import MyMain from './componenti/Main/MyMain';
 
 function App() {
   
@@ -9,6 +10,7 @@ function App() {
     <>
       <RicercaProvider>
         <MyHeader />
+        <MyMain />
       </RicercaProvider>
     </>
   )

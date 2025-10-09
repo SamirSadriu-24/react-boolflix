@@ -1,6 +1,6 @@
 import "./MyHeader.css";
-import { useState } from 'react';
-
+import { useContext } from "react";
+import { RicercaContext } from "../Context";
 const MyHeader = () => {
 
     // prendere il valore della barra di ricerca.
