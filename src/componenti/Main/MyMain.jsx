@@ -1,7 +1,7 @@
 import "./MyMain.css"
 import { useContext, useEffect, useState } from "react"
 import { RicercaContext } from "../Context"
-import Flag from "react-flagpack";
+// avevo provato a usare reactflag ma non mi ha funzionato. 
 
 const MyMain = () => {
 
@@ -47,7 +47,7 @@ const MyMain = () => {
                     KO: "https://flagcdn.com/16x12/kr.png",
                     VI: "https://flagcdn.com/16x12/vn.png"
                 };
-                
+
                 return (
                     <ul key={movie.id} className="movie_box">
                         <li>{movie.title || movie.name}</li>
