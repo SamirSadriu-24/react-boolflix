@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    background-color: black;
+    padding: 20px 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: red;
+    font-size: 25px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+input:focus {
+    border-color: red;
+    outline: 2px solid red;
+    border-radius: 5px;
+}
+
+i {
+    color: white;
+    cursor: pointer;
+}
+
+input {
+    padding: 10px;
+    border: black;
+}
+
