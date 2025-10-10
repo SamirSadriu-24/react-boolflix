@@ -15,7 +15,9 @@ const MyMain = () => {
 
     const API_KEY = import.meta.env.VITE_API
     const URL = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${valore}&language=en-EN`;
+    
     const URL2 = `https://api.themoviedb.org/3/search/tv?api_key=${API_KEY}&query=${valore}&language=en-EN`;
+    
     const [film, impostaFilm] = useState([]);
 
     const generaStelle = (vote_average) => {
