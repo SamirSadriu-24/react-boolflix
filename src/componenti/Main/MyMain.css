@@ -1,33 +1,80 @@
-main{
+main {
     background-color: black;
-    color:white;
+    color: white;
     min-height: 90vh;
 }
-.contenitore{
+
+.contenitore {
     display: flex;
     flex-wrap: wrap;
-    gap:20px;
-
+    justify-content: center;
+    row-gap:20px
 }
-.movie_box{
-    list-style-type:none;
-    width: (100% /5);
-    display:flex;
-    flex-direction: row;
+
+.movie_box {
+    list-style-type: none; 
+    width: calc(25% - 10px);
+    display: flex;
     align-items: center;
     justify-content: center;
+    max-height: fit-content;
 }
 
-.info_box ul{
+
+.info_box {
+    height: 100%;
+    width: 100%;
+    z-index:1;
+    position: absolute;
+    top:20%;
+    display:none;
+}
+
+.info_box ul {
     padding: 20px;
+    gap:10px;
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 15px;
+    text-align: left;
 }
+.info_box ul li {
+    min-width: 100px;
+}
+.info_box ul li span{
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+.wrapper {
+    width: 342px;
+    height: 513px;
+    position: relative;
+    overflow: hidden;
+}
+
+
 .POSTER{
-    width: 154px;
-    height: 231px;
-    object-fit: contain;
+    height: 513px;
+    max-width: 342px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+.wrapper:hover .overlay{
+        background-color: rgba(0, 0, 0, 0.8);
+}
+
+.wrapper:hover .info_box{
+    display:block;
 }

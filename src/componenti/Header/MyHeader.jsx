@@ -12,7 +12,7 @@ const MyHeader = () => {
     }
     
     const PrendiValore = () => {
-        console.log("ricerca:", valore)
+        impostaValore(valore)
     }
     
     const PrendiValoreInvio = (e) => {
