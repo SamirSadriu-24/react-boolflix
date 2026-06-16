@@ -91,7 +91,7 @@ const MyMain = () => {
                                         <li><span>TITOLO ORIGINALE:</span>{movie.original_title || movie.original_name}</li>
                                         <li><span>VOTO:</span>{generaStelle(movie.vote_average)}</li>
                                         <li><span>OVERVIEW:</span>{movie.overview}</li>
-                                        {/* <li><img src={lingua_bandiera_link[codicePaese] || "./src/assets/flag-4-16.png"} alt={movie.original_language} width={30} height={15} /></li> */}
+                                        <li><img src={lingua_bandiera_link[codicePaese] || "./src/assets/flag-4-16.png"} alt={movie.original_language} width={30} height={15} /></li>
                                     </ul>
                                 </div>
                             </div>
